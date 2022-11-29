@@ -4,9 +4,7 @@ import heroMobiles from '../assets/images/image-mockups.png'
 import Button from './Button';
 
 const Hero = () => {
-    // const style = {
-    //     background
-    // }
+
     return ( 
         <section className='w-full overflow-x-clip'>
             <div className='max-w-[1200px] mx-auto flex flex-col md:flex-row-reverse'>
@@ -29,18 +27,6 @@ const Hero = () => {
                     <Button label={'Get Started'} customClass={'mx-auto md:mx-0 mb-12 md:mb-0'} />
                 </div>
                 </>
-                
-                {/* // <>
-                // <div>
-                //     <h1 className='text-4xl'>Next generation digital banking</h1>
-                //     <p className='text-bodyCopy text-gray-blue'>Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.</p>
-                //     <Button label={'Get Started'} customClass={'mx-auto'} />
-                // </div>
-                // <div className='relative '>
-                //     <img src={heroBgDesktop} alt="" className='z-[1] w-full' />
-                //     <img src={heroMobiles} alt="" className='z-5 absolute -right-24 top-0' />
-                // </div>
-                // </> */}
               
             </div>
         </section>

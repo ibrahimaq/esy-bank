@@ -16,35 +16,3 @@
     @apply text-bodyCopy text-gray-blue;
   }
 }
-
-*:hover {
-  outline: 1px blue solid;
-}
-
-
-.heroImage-background {
-  width: 50vw;
-  height: 100%;
-  background-image: url('./assets/images/bg-intro-mobile.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 99;
-}
-
-@media (min-width: 768px) {
-  .heroImage-background {
-    background-image: url('./assets/images/bg-intro-desktop.svg');
-  }
-}
-
-.heroImage-mobiles {
-  background-image: url('./assets/images/image-mockups.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 60vh;
-  z-index: 10;
-  position: absolute;
-}
