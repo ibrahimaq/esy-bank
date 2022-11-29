@@ -8,14 +8,14 @@ const LatestArticles = () => {
         <section className='bg-gray-light'>
             <div className="max-w-[1200px] mx-auto px-5 py-24">
                 <h2 className="text-4xl">Latest Articles</h2>
-                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mt-12'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-12'>
                    {data.map((item, i) => (
                         <article key={i} className='flex flex-col min-h-[94px] md:h-full'>
                            
-                            <div className='overflow-hidden max-w-[640px] sm:w-full sm:max-h-[200px] md:max-h-[200px]'>
-                                <img src={item.img} alt={item.alt} className='w-[640px] sm:w-full  md:w-full' />
+                            <div className='overflow-hidden max-w-[640px] sm:w-full sm:max-h-[200px]'>
+                                <img src={item.img} alt={item.alt} className='w-[640px] sm:w-full md:h-[200px] md:object-cover' />
                             </div>
-                            <div className='py-6 px-4 bg-white'>
+                            <div className='py-6 px-4 bg-white flex flex-col gap-3 flex-grow'>
                                 <p className='text-sm'>{item.author}</p>
                                 <h4 className='text-2xl'>{item.title}</h4>
                                 <p>{item.description}</p>
