@@ -16,7 +16,7 @@ const Navbar = () => {
                     <span className="block w-full h-[1px] bg-gray-blue"></span>
                     <span className="block w-full h-[1px] bg-gray-blue"></span>
                 </button>
-                <nav className={`${mobileMenu? 'block' : 'hidden'} md:block  absolute top-full w-full md:relative md:w-auto`}>
+                <nav className={`${mobileMenu? 'block' : 'hidden'} md:block bg-white absolute top-full left-0 w-full md:relative md:w-auto`}>
                     <ul className='flex flex-col justify-center py-7 md:py-0 gap-5 md:flex-row md:justify-between md:gap-5'>
                         {Links.map((item, i ) => 
                             <li key={i} className='text-dark-blue md:text-gray-blue cursor-pointer md:hover:text-dark-blue transition-colors duration-300 text-center'>{item}</li>
